@@ -2,24 +2,25 @@
 
 ## Overview
 
-This project will serve as a log of your progress throughout the entirety of
-this course.
+The student log is your life line to track your progress as well as keep your
+instructor abreast. The expecation in this class is that you will create a
+sign-on and sign-off each time you work on something for this class. This is a
+major part of your Skills of a Student and Effort Grade.
 
 * [Required Software](#required-software)
   * [Install Git](#install-git)
   * [Install VSCode](#install-vscode)
 * [Create a Github account](#create-a-github-account)
 * [Sign up for this project](#sign-up-for-this-project)
-* [Terminal Basics](#terminal-basics)
-  * [Starting a terminal](#starting-a-terminal)
-  * [Navigating directories](#navigating-directories)
-  * [Creating a directory](#creating-a-directory)
-  * [Clone your repository](#clone-your-repository)
-  * [Running the setup script](#TODO)
-  * [The develop branch](#TODO)
-  * [Making a Commit](#TODO)
-  * [Pushing a Commit](#TODO)
-* [Creating a Pull Request]
+  * [Install GitHub Desktop](#install-github-desktop)
+  * [Cloning your Student Log](#cloning-your-student-log)
+  * [VSCode as External Editor](#vscode-as-external-editor)
+* [Creating your first Sign-on Log Entry](#creating-your-first-sign-on-log-entry) 
+  * [The Log File](#the-log-file)
+  * [Creating a Commit](#creating-a-commit)
+  * [Pushing your commit to Github](#pushing-your-commit-to-github)
+  * [Verifying your work](#verifying-your-work)
+  * [Creating your first Sign-off Log Entry](#creating-your-first-sign-off-log-entry)
 
 ## Required Software
 
@@ -77,134 +78,198 @@ Chadwick email is one of the associated emails.
 
 ## Sign up for this project
 
-TODO
+After you have an account and are logged in. You can sign up for this project
+here:
+[https://classroom.github.com/a/fB_ElDob](https://classroom.github.com/a/fB_ElDob)
 
-## Terminal Basics
+From this page, you must click `Accept this Assignment`. This will create a
+personal copy of this git repository for you. You will need to wait for the
+repository to be created. Then, click refresh in your browser.
 
-The `terminal` is a program that allows you to access a `shell`. A `shell` is a
-program which allows you to send commands to your operating system. In this
-class, the word `terminal` and `shell` will be used almost synonymously.
-
-### Starting a Terminal
-
-#### Windows
-
-If you're using Windows and have already installed `Git`. You now have a program
-called `git bash` that will use as your terminal and shell for this class. You
-can launch it by right clicking on a folder and selected `git bash`. This will
-open the terminal starting in that folder.
-
-#### Mac
-On Mac, you can start the terminal using the Spotlight Search (Commnad+Space)
-and then searching for terminal. When it opens, it should look something like
-the image below. *Note*: It may look a little different, we will be configuring
-your terminal next.
-
-![images/terminal-1.png](images/terminal-1.png)
-
-##### Using Bash
-By default, Mac uses a `shell` called `zsh`. In this class, you are expected to
-use `bash`. To change this setting, select your terminal window. Then, in the
-top menu select `Terminal` > `Preference`.
-
-![images/terminal-config.png](images/terminal-config.png)
-
-Next, select the General Tab.
-
-In the section that says, `Shells open with:` select `Command`, then enter
-`/bin/bash`.
-
-You will need to restart your terminal for this to take effect. Go ahead and
-exit the termina and restart it now.
-
-### Listing File Contents
-
-If you start the terminal normally, it will launch a shell in your `HOME`
-directory. You can list all of the files in the current directory you are in by
-typing the command `ls` which is short for List.
-
-### Navigating Directories
-
-You may be more familiar with the word "folder" as that is what is used visually
-on most computers to represent a directory. When we use the word directory in
-this class, we are referring to a specific location or "PATH" on a computer.
-
-To see which directory your shell is currently in, you can run the `pwd` command
-which stands for "Print Working Directory".
-
-This will print out the full path to your current location. On Mac, you can run
-the `open .` command to open Finder at the shell's current location.
-
-To access files in different locations, you can navigate between directories by
-using the `cd` command which stands for Change Directory. This command expects
-an argument to be provided.
-
-For example, `cd Desktop` will change to the Desktop directory if one exists at
-the current location. In the previous example, we say that `cd` is the command
-and `Desktop` is the argument. Try the following sequence of commands:
-
-1. `cd $HOME`
-2. `pwd`
-3. `cd Desktop`
-4. `pwd`
-5. `cd ..`
-6. `pwd`
-7. `cd .`
-8. `pwd`
-
-What do you think the `$HOME` argument means? What do you think the `..` argument means?
-
-There are two several special directories that are always available in the terminal. Here are three of them:
-
-* `$HOME` - This refers to the current users `HOME` directory
-* `.` - This refers to the current directory
-* `..` - This refers to the parent directory and allows you to navigate "backwards"
-
-### Creating a Directory
-
-In the terminal, you can create new directories using the `mkdir` command which
-stands for Make Directory. This command expects one or more arguments to be provided.
-
-If you wanted to make multiple directories you would run the command:
-
-`mkdir dir-1 dir-2 dir-3`
-
-In the above example, `mkdir` is the command, `dir-1` is argument 1, `dir-2` is
-argument 2, and `dir-3` is argument 3. This example would result in 3 new
-directories being created `dir-1`, `dir-2`, and `dir-3`.
-
-Try the following commands:
-
-1. `cd $HOME`
-2. `mkdir ap-compsci-principles` (*Note*: use hyphens to avoid making 3 directories!)
-3. `ls`
-4. `cd ap-compsci-principles`
-5. `pwd`
-
-If all went well, you should now be inside of your new directory.
-
-### Clone your repository
-
-#### Double Check Installation
-
-Before you can run this step, you need to ensure you have `git` installed. Run
-the following command:
-
-`git --version`
-
-If all goes well, you should see a response similar to this: `git version
-2.15.0`. If not, you need to install `git` using the instructions above.
-
-#### Locate your project
+Follow the URL to access your repository. It should look like
+`https://github.com/ChadwickCSP/student-log-XXXXXX` where `XXXXXX` is your
+Github username. You should bookmark this page as it is your reference to your
+personal project.
 
 
+### Install GitHub Desktop
+To get your project downloaded, you will need to install GitHub Desktop. You can
+find it here: [https://desktop.github.com/](https://desktop.github.com/)
 
-### Running the setup script
+When you launch GitHub Desktop for the first time, you will need to login to your Github account.
 
-### The develop branch
+Next, it will ask you to configure git. You should use your school email address.
 
-### Making a commit
+### Cloning your Student Log
 
-### Pushing a commit
+Clone your student log repository. This creates a local copy of your project on
+your computer.
 
-## Creating a Pull Request
+![images/github-desktop-student-log.png](images/github-desktop-student-log.png)
+
+Take note of the `Local Path`. You can change this to a different location if
+you would like. Click Clone.
+
+###  VSCode as External Editor
+
+Click the Preferences link on the main screen of your repository.
+
+Select the Integrations tab on the left.
+
+Ensure that `External Editor` is set to `Visual Studio Code`.
+
+Click Save.
+
+## Creating your first Sign-on Log Entry
+
+### The Log File
+
+Click the `Open in Visual Studio Code` button. This will open up a workspace for
+the student-log project.
+
+![images/githubdesktop-openinvscode.png](images/githubdesktop-openinvscode.png)
+
+Right click on the `logs` folder and select `New File`.
+
+![images/vscode-newfile.png](images/vscode-newfile.png)
+
+Each log file should be named using the current date with the following format:
+`YYYY-MM-DD.md`. For example, `2021-08-31.md` would be the file containing all
+log entries for the August 31st 2021.
+
+The `md` at the end of the filename is called a file extension. This stands for
+Mark Down which is the file format we will use for the majority of documents you
+write in this course. You can find a cheat sheet for markdown here:
+[https://www.markdownguide.org/cheat-sheet/](https://www.markdownguide.org/cheat-sheet/)
+
+Next, you need to create a sign-on entry for your work. Enter the following in
+the log file, replacing the date and time with the current date and time.
+
+```markdown
+# August 31st 2021
+## Sign-on - 8:00 AM
+
+- [ ] Create my first log entry
+- [ ] Create a commit
+- [ ] Push my commit to Github
+- [ ] Bask in my GREATNESS!
+```
+
+Each log file begins with a header denoted with `#` with the date.
+
+Each log entry begins with a sub-header `##` indicating what type of log entry
+this is: `Sign-on` or `Sign-off` and the time that the entry was created.
+
+Finally, the entry contains a list of actionable items to be completed. Each
+item begins with a `- [ ]` followed by a description of what you hope to
+complete or what was completed. *Note*: The formatting here is important; you
+must include the hyphen and spacing.
+
+Once you are done creating your first sign-on, make sure to save your work on
+Mac use (Command + S) on Windows use (Ctrl + S).
+
+![images/vscode-unsavedwork.png](images/vscode-unsavedwork.png)
+
+### Creating a Commit
+
+After you've created your first log-entry, you must perform a commit. A commit
+is the process of creating a "version" of your work. You can think of this as a
+snapshot of the project at a specific moment in time.
+
+To do this in VSCode, access the Source Control tab by clicking the Source
+Control icon on the left side of the screen.
+
+![images/vscode-sourcecontrol.png](images/vscode-sourcecontrol.png)
+
+On this screen, you can see a list of the files that have been created or
+modified since the last commit.
+
+Click the add icon next to `stage` the log to be committed. A staged file has
+been marked to be committed but has not yet been committed. This allows you the
+ability to add several files in a single commit.
+
+![images/vscode-addfile.png](images/vscode-addfile.png)
+
+Next, add a message describing what you did for this commit in the message box
+at the top of the interface.
+
+![images/vscode-addmessage.png](images/vscode-addmessage.png)
+
+Finally, click the commit icon at the top of the interface to perform the
+commit.
+
+![images/vscode-commit.png](images/vscode-commit.png)
+
+After clicking it, you'll notice that the changes list will be empty. This means
+there have been no changes since you made your commit.
+
+### Pushing your commit to Github
+
+When you make a commit, the work is only stored on your computer. To publish
+your changes to Github, you must perform a push.
+
+To do this, you will return to GitHub desktop. You'll now see there is an option
+to `Push origin`. Click this button to publish your log entry.
+
+![images/githubdesktop-push.png](images/githubdesktop-push.png)
+
+### Verifying your work
+
+The last step is to verify your log entry is available on GitHub so that your
+instructor can see it.
+
+Navigate to your project URL that you bookmarked earlier. Then, click on the
+`logs` directory.
+
+![images/github-logs.png](images/github-logs.png)
+
+If all went well, you should see your log entry file here. Click on it.
+
+![images/github-logentry.png](images/github-logentry.png)
+
+You will now see the markdown you wrote converted into a nicely formatted
+sign-on entry. *Note:* If your entry doesn't have a nice task list like the
+image below, your formatting is not correct. Go back to the previous step and
+update your entry to match the exact formatting.
+
+![images/github-entry.png](images/github-logentry.png)
+
+## Creating your first Sign-off Log Entry
+
+Now that you've finished creating your first sign-on, you must create a sign-off
+marking each of the items you completed.
+
+Check the date and time. If necessary, create a new log file with the current
+date. Then, create a new entry for the current time and denote it is a
+`sign-off`.
+
+When you create a sign-off, you should update your list to have any items you
+completed that were not present. As well as marking off the items that were
+completed.
+
+In essence: A sign-on says what you hope to accomplish and a sign-off says what
+was actually done. 
+
+Your log entry should look similar to this when you're finished.
+
+```markdown
+# August 31st 2021
+## Sign-on - 8:00 AM
+
+- [ ] Create my first log entry
+- [ ] Create a commit
+- [ ] Push my commit to Github
+- [ ] Bask in my GREATNESS!
+
+## Sign-off - 8:42 AM
+
+- [X] Create my first log entry
+- [X] Create a commit
+- [X] Push my commit to Github
+- [X] Created a sign-off
+- [X] Bask in my GREATNESS!
+```
+
+Finally, save, commit, and push your log entry to Github.
+
+Congratulations! You've just setup your Student Log for the year!
