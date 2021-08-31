@@ -15,12 +15,14 @@ major part of your Skills of a Student and Effort Grade.
   * [Install GitHub Desktop](#install-github-desktop)
   * [Cloning your Student Log](#cloning-your-student-log)
   * [VSCode as External Editor](#vscode-as-external-editor)
-* [Creating your first Sign-on Log Entry](#creating-your-first-sign-on-log-entry) 
+* [Creating your first Sign-on Log
+  Entry](#creating-your-first-sign-on-log-entry) 
   * [The Log File](#the-log-file)
   * [Creating a Commit](#creating-a-commit)
   * [Pushing your commit to Github](#pushing-your-commit-to-github)
   * [Verifying your work](#verifying-your-work)
-  * [Creating your first Sign-off Log Entry](#creating-your-first-sign-off-log-entry)
+  * [Creating your first Sign-off Log
+    Entry](#creating-your-first-sign-off-log-entry)
 
 ## Required Software
 
@@ -96,9 +98,11 @@ personal project.
 To get your project downloaded, you will need to install GitHub Desktop. You can
 find it here: [https://desktop.github.com/](https://desktop.github.com/)
 
-When you launch GitHub Desktop for the first time, you will need to login to your Github account.
+When you launch GitHub Desktop for the first time, you will need to login to
+your Github account.
 
-Next, it will ask you to configure git. You should use your school email address.
+Next, it will ask you to configure git. You should use your school email
+address.
 
 ### Cloning your Student Log
 
@@ -107,18 +111,26 @@ your computer.
 
 ![images/github-desktop-student-log.png](images/github-desktop-student-log.png)
 
-Take note of the `Local Path`. You can change this to a different location if
-you would like. Click Clone.
+Take note of the `Local Path`. This is the location on your computer where the
+repository will be stored. You can change this to a different location if you
+would like. Click Clone.
+
+![images/githubdesktop-localpath.png](images/githubdesktop-localpath.png)
 
 ###  VSCode as External Editor
 
-Click the Preferences link on the main screen of your repository.
+Click the `Preferences` link on the main screen of your repository. *Note:* On
+Windows this says `Options` rather than preferences.
+
+![images/githubdesktop-preferences.png](images/githubdesktop-preferences.png)
 
 Select the Integrations tab on the left.
 
 Ensure that `External Editor` is set to `Visual Studio Code`.
 
 Click Save.
+
+![images/githubdesktop-integrations.png](images/githubdesktop-integrations.png)
 
 ## Creating your first Sign-on Log Entry
 
@@ -128,6 +140,11 @@ Click the `Open in Visual Studio Code` button. This will open up a workspace for
 the student-log project.
 
 ![images/githubdesktop-openinvscode.png](images/githubdesktop-openinvscode.png)
+
+Right clock on the space below the `README.md` file and select `New Folder`.
+Name the folder `logs`.
+
+![images/vscode-newfolder.png](images/vscode-newfolder.png)
 
 Right click on the `logs` folder and select `New File`.
 
